@@ -9,7 +9,7 @@ data = {
 		'year' : 365 * 24 * pow(60, 2),
 		'decade' : 10 * 365 * 24 * pow(60, 2),
 		},
-	'storageSpace' : {
+	'storage-space' : {
 		'bit' : 1/8,
 		'nibble' : 1/2,
 		'byte' : 1,
