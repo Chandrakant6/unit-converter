@@ -12,7 +12,7 @@ data = {
 	'storageSpace' : {
 		'bit' : 1/8,
 		'nibble' : 1/2,
-		'byte : 1,
+		'byte' : 1,
 		'kiloByte' : pow(2,10) ,
 		'megaByte' : pow(2,20) ,
 		'giga-byte' : pow(2,30) ,
