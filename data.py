@@ -19,4 +19,8 @@ data = {
 		'tera-byte' : pow(2,40) ,
 		'peta-byte' : pow(2,50) ,
 		},
+	'angle' : {
+		'degree' : 1,
+		'radian' : maths.pi()/180 ,
+		},
 	}
