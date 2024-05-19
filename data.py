@@ -9,7 +9,7 @@ data = {
 		'year' : 365 * 24 * pow(60, 2),
 		'decade' : 10 * 365 * 24 * pow(60, 2),
 		},
-	'storageSpace : {
+	'storageSpace' : {
 		'bit' : 1/8,
 		'nibble' : 1/2,
 		'byte : 1,
@@ -18,4 +18,5 @@ data = {
 		'giga-byte' : pow(2,30) ,
 		'tera-byte' : pow(2,40) ,
 		'peta-byte' : pow(2,50) ,
-		}
+		},
+	}
