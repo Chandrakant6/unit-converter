@@ -24,4 +24,15 @@ data = {
 		'degree' : 1,
 		'radian' : pi()/180 ,
 		},
+	'length' : {
+		'mili-metre' : pow(10,-3),
+		'centi-metre' : pow(10,-2),
+		'metre' : 1,
+		'kilo-metre' : pow(10,3),
+
+		'inch' : 0.0254 ,
+		'foot' : 12 * 0.0254 ,
+		'yard' : 3 * 12 * 0.0254 ,
+		'mile' : 1760 * 3 * 12 * 0.0254 ,
+		},
 	}
