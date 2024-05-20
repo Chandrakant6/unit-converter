@@ -1,7 +1,7 @@
 # unit-converter
 simplest unit converter
 
-## supported units 
+## supported units (or categories)
 ### time
 ~~~
 seconds to decades
