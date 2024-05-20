@@ -1,3 +1,5 @@
+import sys
+
 from data import data
 
 def main(category :str, value :float, initialUnit: str, finalUnit :str):
@@ -11,3 +13,7 @@ def converter(category :str, value :float, initialUnit: str, finalUnit :str):
 	
 def dynamicConverter(category :str, value :float, initialUnit: str, finalUnit :str): #temperature is dynamic 
 	return data[category][initialUnit][finalUnit](value)
+
+if __name__ == '__main__':
+	category, value, initialUnit, finalUnit = sys.argv[2:]
+	return main(category, value, initialUnit, finalUnit)
