@@ -9,5 +9,5 @@ def converter(category :str, value :float, initialUnit: str, finalUnit :str):
 	category = data[category]
 	return category[initialUnit]/category[finalUnit]
 	
-def dynamicConverter(category :str, value :float, initialUnit: str, finalUnit :str):
+def dynamicConverter(category :str, value :float, initialUnit: str, finalUnit :str): #temperature is dynamic 
 	return data[category][initialUnit][finalUnit]
