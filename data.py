@@ -35,4 +35,18 @@ data = {
 		'yard' : 3 * 12 * 0.0254 ,
 		'mile' : 1760 * 3 * 12 * 0.0254 ,
 		},
+	'temperature' : {
+		'celcius' : {
+			'fahrenheit' : lambda c : c * 9/5 + 32 ,
+			'kelvin' : lambda c : c + 273.15 ,
+			},
+		'fahrenheit' : {
+			'celcius' : lambda f : ( f - 32 ) * 5/9 ,
+			'kelvin' : lambda f : ( f - 32 ) * 5/9 + 273.15 ,
+			},
+		'kelvin' : {
+			'celcius' : lambda k : k - 273.15 ,
+			'fahrenheit' : lambda k : ( k - 273.15 ) * 9/5 + 32  ,
+			},
+		},
 	}
