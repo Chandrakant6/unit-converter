@@ -6,7 +6,10 @@ def main(category :str, value :float, initialUnit: str, finalUnit :str):
 	# category validation
 	if category not in data:
 		return f'Invalid category avilable categories are{data.keys}'
-	elif not isinstance(variable, dict):
+	# value validation
+	elif not (isinstance(value, int) or isinstance(value, float)):
+		return f'invalid value datatype avilable datatypes are int or float' 
+	elif not isinstance(category, dict):
 		return convert(category, value, initialUnit, finalUnit)
 	return dynamicConverter(category, value, initialUnit, finalUnit)
 
