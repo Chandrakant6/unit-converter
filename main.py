@@ -33,5 +33,5 @@ def validate(category, value, initialUnit, finalUnit):
 	
 
 if __name__ == '__main__':
-	category, value, initialUnit, finalUnit, _ = sys.argv[2:6]
+	category, value, initialUnit, finalUnit = sys.argv[2:6]
 	return main(category, float(value), initialUnit, finalUnit)
