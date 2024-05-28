@@ -21,5 +21,5 @@ def dynamicConverter(category :str, value :float, initialUnit: str, finalUnit :s
 	return data[category][initialUnit][finalUnit](value)
 
 if __name__ == '__main__':
-	category, value, initialUnit, finalUnit = sys.argv[2:]
+	category, value, initialUnit, finalUnit, _ = sys.argv[2:6]
 	return main(category, value, initialUnit, finalUnit)
