@@ -3,7 +3,9 @@ import sys
 from data import data
 
 def main(category :str, value :float, initialUnit: str, finalUnit :str):
-	if not isinstance(variable, dict):
+	if category not in data:
+		return f'Invalid category avilable categories are{data.keys}'
+	elif not isinstance(variable, dict):
 		return convert(category, value, initialUnit, finalUnit)
 	return dynamicConverter(category, value, initialUnit, finalUnit)
 
