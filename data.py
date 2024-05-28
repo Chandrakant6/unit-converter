@@ -1,4 +1,3 @@
-from maths import pi
 data = {
 	'time' : {
 		'second' : 1,
@@ -22,7 +21,7 @@ data = {
 		},
 	'angle' : {
 		'degree' : 1,
-		'radian' : pi()/180 ,
+		'radian' : 0.01744 , #~ 3.14/180
 		},
 	'length' : {
 		'mili-metre' : pow(10,-3),
