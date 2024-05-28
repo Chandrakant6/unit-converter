@@ -3,8 +3,10 @@ import sys
 from data import data
 
 def main(category :str, value :float, initialUnit: str, finalUnit :str):
-	return validate(category, value, initialUnit, finalUnit)
-	elif not isinstance(category, dict):
+	valid = validate(category, value, initialUnit, finalUnit)
+	if valid:
+		return valid
+	if not isinstance(data[category][initialUnit], dict):
 		return convert(category, value, initialUnit, finalUnit)
 	return dynamicConverter(category, value, initialUnit, finalUnit)
 
