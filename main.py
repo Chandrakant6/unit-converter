@@ -3,6 +3,7 @@ import sys
 from data import data
 
 def main(category :str, value :float, initialUnit: str, finalUnit :str):
+	# category validation
 	if category not in data:
 		return f'Invalid category avilable categories are{data.keys}'
 	elif not isinstance(variable, dict):
