@@ -7,7 +7,7 @@ def main(category :str, value :float, initialUnit: str, finalUnit :str):
 	if valid:
 		return valid
 	if not isinstance(data[category][initialUnit], dict):
-		return convert(category, value, initialUnit, finalUnit)
+		return converter(category, value, initialUnit, finalUnit)
 	return dynamicConverter(category, value, initialUnit, finalUnit)
 
 def converter(category :str, value :float, initialUnit: str, finalUnit :str):
