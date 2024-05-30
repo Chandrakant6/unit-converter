@@ -3,9 +3,9 @@ import sys
 from data import data
 
 def main(category :str, value :float, initialUnit: str, finalUnit :str):
-	valid = validate(category, value, initialUnit, finalUnit)
-	if valid:
-		return valid
+	notValid = validate(category, value, initialUnit, finalUnit)
+	if notValid:
+		return notValid
 	if not isinstance(data[category][initialUnit], dict):
 		return converter(category, value, initialUnit, finalUnit)
 	return dynamicConverter(category, value, initialUnit, finalUnit)
